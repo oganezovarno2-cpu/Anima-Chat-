@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Anima — gentle CBT friend</title>
+  <link rel="stylesheet" href="/assets/styles.css"/>
+</head>
+<body>
+  <div id="wm">ANIMA</div>
+
+  <header class="header">
+    <div class="bar">
+      <a class="btn ghost" href="https://anima-is-your-soul.netlify.app/">← Back to home</a>
+      <div class="logo">Anima</div>
+      <a id="reset" class="btn" href="#">Reset</a>
+    </div>
+    <div class="note">Mini preview · English by default</div>
+  </header>
+
+  <main class="wrap">
+    <section class="sheet">
+      <div id="chat" class="chat">
+        <div class="bubble ai">Hi, I’m Anima — a gentle friend and CBT-informed coach. How are you feeling today?</div>
+      </div>
+      <form id="form" class="composer">
+        <input id="msg" class="input" type="text" placeholder="Type a message…" required/>
+        <button id="sendBtn" class="btn" type="submit">Send</button>
+      </form>
+    </section>
+
+    <section class="reviews">
+      <h2>What people say</h2>
+      <div class="grid">
+        <article class="card"><div class="stars">★★★★★</div><p>Kind and practical. Small steps that actually help.</p><b>— Sara</b></article>
+        <article class="card"><div class="stars">★★★★☆</div><p>Soothing tone + CBT-style prompts.</p><b>— Alex</b></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="y"></span> Anima</footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <script src="/assets/script.js"></script>
+</body>
+</html>
